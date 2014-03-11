@@ -1,0 +1,24 @@
+{% extends "desktop.html" %}
+{% block body %}
+    <h2>Schedule</h2>
+    {% if event_count > 0 %}
+        <table name="schedule">
+            <tbody>
+                {% for event in events %}
+                    
+                    <tr class="{% if event.end_ts < now_ts %}stricken{% endif %}">
+                        <td class="time">{{ event.start }} - {{ event.end }}</td>
+                        <td class="name">{{ event.name }}</td>
+                        <td class="hangout">
+                            {% if event.hangout != "" %} 
+                                <a href="{{ event.hangout }}">Join hangout</a> 
+                            {% endif %}
+                       </td> 
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No meetings scheduled today.</p>
+    {% endif %}
+{% endblock %}

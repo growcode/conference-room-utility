@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/static/js/lib/require.js" data-main="/static/js/main.js"></script>
+</head>
+<body>
+<section id="page" class="container pageContainer">
+    <header>
+        <div class="logo clickable"></div>
+        <h1>{{ title }}</h1>
+    </header>
+
+    <section id="content">
+        {% block body %}{% endblock %}
+    </section>
+
+    <footer class="clearfix">
+        <ul>
+            {% if show_reload == True %}
+                <li><span class="clickable force_refresh">Force Reload</a></li>
+            {% endif %}
+            {% if support_email != None %}
+                <li><a href="mailto:{{support_email}}">Report Issues</a></li>
+            {% endif %}
+        </ul>
+    </footer>
+</section>
+</body>
+</html>

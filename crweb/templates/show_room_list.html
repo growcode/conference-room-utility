@@ -1,0 +1,9 @@
+{% extends "desktop.html" %}
+{% block body %}
+    <p>Please select a room to view today&rsquo;s schedule.</p>
+    <ul>
+        {% for key, room in rooms | dictsort  %} 
+            <li><a href="/room/{{ key }}">{{ room.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

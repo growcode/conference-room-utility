@@ -1,0 +1,126 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #F0F0F0;
+    font-family: helvetica, arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #3b3b3b;
+}
+
+.container {
+    position:relative;
+    top: 50%;
+    margin: -248px auto 0 auto;
+    padding: 20px 20px 0 20px;
+    width: 480px;
+    background: #fff;
+    border-radius:16px;
+    border: 8px solid rgb(221,221,221);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background: url(../img/logo.png) top left no-repeat;
+}
+
+a, span.clickable {
+    color: #3b3b3b;
+    text-decoration: none;
+    border-bottom: 1px dotted #b25538;
+}
+
+a, .clickable {
+    cursor: pointer;
+}
+
+h1, h2 {
+    font-family: georgia, serif;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 22px;
+    color: #b25538;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    margin: 15px 0 0 0;
+}
+
+table {
+    border-spacing: 0;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+tr.stricken {
+    text-decoration: line-through;
+}
+
+td {
+    text-align: left;
+    padding: 2px 0 2px 0;
+    margin: 0;
+}
+
+td.time {
+    width: 120px;
+}
+
+td.name {
+    padding-left: 10px;
+    width: 220px;
+}
+
+td.hangout {
+    width: 130px;
+    text-align: right;
+}
+
+footer {
+    margin-top: 15px;
+    text-align: right;
+}
+
+footer ul {
+    float: right;
+}
+
+footer ul li {
+    list-style: none;
+    float: left;
+}
+
+footer ul li:after {
+  content: '|';
+  margin: 0 4px 0 4px;
+}
+
+footer ul li:last-child:after {
+  content: '';
+}
+
+/* Source: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

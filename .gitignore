@@ -1,0 +1,15 @@
+# Build-generated docs #
+########################
+
+# OS generated files #
+######################
+.DS_Store?
+.DS_Store
+ehthumbs.db
+Icon?
+Icon
+Thumbs.db
+
+Changelog
+*.pyc
+data/*.json
