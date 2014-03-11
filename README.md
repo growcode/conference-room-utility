@@ -1,6 +1,5 @@
 # Grow Conference Room Utility
 
---------
 # About
 Give all your conference rooms a digital dashboard tied to your Google Apps account!
 
@@ -13,7 +12,6 @@ display the schedules of each of your conference rooms, including links for upco
 - Users can browse room usage via an internal URL.
 - Each conference room has its own landing page that can be used as a homepage for conference room computers/TVs. Employees and visitors can easily see who has resevered a given room and quickly access Hangouts via the app's account login.
 
---------
 # Setup and Configuration
 To get the utility up and running you will have to do the following (detailed below):
 
@@ -118,10 +116,8 @@ For each conference room that is equipped with a computer and primary display (e
 1. Open the web browser and log into gmail with your resource's account. Close the window. (Note, by logging in this first time, clicking on Join Hangout links within the utility in the future will join the given Hangout as this resource account.)
 2. Navigate to TheDomainYouConfiguredAbove.com and click on the room that you are currently in. Make this page the browser's home screen.
 
---------
 # Author
 Created by [Grow](http://thisisgrow.com)
 
---------
 # License
 This project is licensed under the MIT License. (See LICENSE)
